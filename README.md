@@ -55,11 +55,11 @@ Les tests se lancent aussi automatiquement sur GitHub à chaque push et à chaqu
 
 | Rôle | Nom | GitHub |
 |:--------:|:--------:|:--------:|
-| Chef de Projet | Clément P. | [Visit](https://github.com/Clement-Poger) |
-| Collaborateur | Julian de F. | [Visit]() |
-| Collaborateur | Jeyson B. | [Visit](https://github.com/Littlegamer0) |
-| Collaborateur | Tiago C. | [Visit](https://github.com/TCR-JKBX) |
-| Collaborateur | Nathan B. | [Visit](https://github.com/Nathanb28310) |
+| Chef de Projet | Clément P. | [@Clement-Poger](https://github.com/Clement-Poger) |
+| Collaborateur | Julian de F. | [@Niffleur2020](https://github.com/Niffleur2020) |
+| Collaborateur | Jeyson B. | [@Littlegamer0](https://github.com/Littlegamer0) |
+| Collaborateur | Tiago C. | [@TCR-JKBX](https://github.com/TCR-JKBX) |
+| Collaborateur | Nathan B. | [@Nathanb28310](https://github.com/Nathanb28310) |
 
 ## Contribuer
 
