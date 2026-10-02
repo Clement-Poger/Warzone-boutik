@@ -58,8 +58,11 @@ Lis [CONTRIBUTING.md](CONTRIBUTING.md) : une issue, une branche, une Pull Reques
 ## Équipe
 
 | Rôle | Nom | GitHub |
-| --- | --- | --- |
-
+| Chef de Projet | Clement Poger | @clement poger |
+| Collaborateur | Jeyson Bouhet | 
+| Collaborateur | Julian |
+| Collaborateur | Nathan |
+| Collaborateur | Tiago |
 ## Licence
 
-[MIT](LICENSE)
+
