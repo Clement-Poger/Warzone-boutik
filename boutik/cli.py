@@ -24,6 +24,15 @@ def do_search(products, cart):
         print("Aucun produit trouvé.")
     show_products(results, cart)
 
+def do_filter(products, cart):
+    """Affiche les produits d'une catégorie."""
+    print("Catégories :", ", ".join(catalog.categories(products)))
+    category = input("Catégorie : ").strip()
+    results = catalog.filter_by_category(products, category)
+    if not results:
+        print("Aucun produit dans cette catégorie.")
+    show_products(results, cart)
+
 
 def do_add(products, cart):
     """Ajoute un produit au panier."""
@@ -90,6 +99,8 @@ MENU = [
     ("5", "Voir le panier", show_cart),
     ("6", "Valider la commande", checkout),
     ("7", "Trier par prix", do_sort)
+    ("8", "Filtrer par catégorie", do_filter),
+
 ]
 
 

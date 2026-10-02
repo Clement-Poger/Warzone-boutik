@@ -34,7 +34,9 @@ def search(products, text:str):
     return [p for p in products if text.lower() in p["name"].lower()]
 
 
-# TODO (mission F3) : ajouter ici la fonction filter_by_category(products, category)
+def filter_by_category(products, category):
+    """Renvoie les produits d'une catégorie (sans tenir compte des majuscules)."""
+    return [p for p in products if p["category"].lower() == category.lower()]
 
 
 def categories(products):
