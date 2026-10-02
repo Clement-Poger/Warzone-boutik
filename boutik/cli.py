@@ -57,7 +57,7 @@ def show_cart(products, cart):
 def do_alerts(products, cart):
 #Affiche les produits presque en rupture de stock.
     for p in stock.low_stock(products):
-    print(f" ALERTE : {p['name']}, plus que {p['stock']} en stock")
+        print(f" ALERTE : {p['name']}, plus que {p['stock']} en stock")
 
 def checkout(products, cart):
     """Valide la commande : facture, paiement et mise à jour du stock."""
