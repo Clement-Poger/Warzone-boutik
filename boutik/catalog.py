@@ -24,7 +24,7 @@ def load_products(path=DEFAULT_PATH):
 def find_product(products, product_id):
     """Renvoie le produit qui a cet identifiant, ou None s'il n'existe pas."""
     for product in products:
-        if product["id"] == str(product_id):
+        if product["id"] == product_id:
             return product
     return None
 
