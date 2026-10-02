@@ -60,7 +60,9 @@ def checkout(products, cart):
     text = invoice.build_invoice(cart, products)
     print(text)
 
-    # [F1] code promo
+    code = input("Code promo (Entrée si aucun) : ")
+    total = pricing.apply_promo(total, code)
+
 
     # [F2] frais de livraison
 
