@@ -12,7 +12,7 @@ def load_products(path=DEFAULT_PATH):
     with open(path, encoding="utf-8") as f:
         for row in csv.DictReader(f):
             products.append({
-                "id": row["id"],
+                "id": int(row["id"]),
                 "name": row["name"],
                 "category": row["category"],
                 "price_ht": float(row["price_ht"]),
@@ -40,6 +40,5 @@ def search(products, text):
 def categories(products):
     """Renvoie la liste triée des catégories du catalogue."""
     return sorted({p["category"] for p in products})
-
 
 # TODO (mission F6) : ajouter ici la fonction sort_by_price(products, descending=False)
