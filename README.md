@@ -58,11 +58,27 @@ Lis [CONTRIBUTING.md](CONTRIBUTING.md) : une issue, une branche, une Pull Reques
 ## Équipe
 
 | Rôle | Nom | GitHub |
+<<<<<<< HEAD
 | Chef de Projet | Clement Poger | @clement poger |
 | Collaborateur | Jeyson Bouhet | 
 | Collaborateur | Julian |
 | Collaborateur | Nathan |
 | Collaborateur | Tiago |
+=======
+|:--------:|:--------:|:--------:|
+| chef de proj | clément | --- |
+| collaborateur | julian | --- |
+| collaborateur | jeyson | --- |
+| collaborateur | tiago | --- |
+| collaborateur | nathan | --- |
+
+
+
+
+git clone <url-du-depot>
+cd <nom-du-depot>
+pip install -r requirements.txt     # installe pytest (facultatif)
+>>>>>>> d9e97151871d8e118dbb7c3736c23dd591e2858b
 ## Licence
 
 
