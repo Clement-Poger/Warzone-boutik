@@ -80,6 +80,8 @@ def checkout(products, cart):
     print(f"À PAYER : {invoice.format_price(total)}")
 
     # [F4] sauvegarde de la facture
+    path = invoice.save_invoice(text)
+    print(f"Facture enregistrée : {path}")
 
     # [F5] points de fidélité
     print(f"Points de fidélité gagnés : {loyalty.points_for(total)}")

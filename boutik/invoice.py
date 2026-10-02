@@ -3,6 +3,8 @@
 from boutik.cart import cart_total
 from boutik.catalog import find_product
 from boutik.pricing import price_ttc
+from datetime import datetime
+from pathlib import Path
 
 
 def format_price(amount):
@@ -21,4 +23,10 @@ def build_invoice(cart, products):
     return "\n".join(lines)
 
 
-# TODO (mission F4) : ajouter ici la fonction save_invoice(text, folder="invoices")
+def save_invoice(text, folder="invoices"):
+    """Enregistre la facture dans un fichier texte et renvoie son chemin."""
+    Path(folder).mkdir(exist_ok=True)
+    name = datetime.now().strftime("facture_%Y%m%d_%H%M%S.txt")
+    path = Path(folder) / name
+    path.write_text(text, encoding="utf-8")
+    return path
