@@ -50,6 +50,10 @@ def show_cart(products, cart):
         return
     print(invoice.build_invoice(cart, products))
 
+def do_alerts(products, cart):
+#Affiche les produits presque en rupture de stock.
+    for p in stock.low_stock(products):
+    print(f" ALERTE : {p['name']}, plus que {p['stock']} en stock")
 
 def checkout(products, cart):
     """Valide la commande : facture, paiement et mise à jour du stock."""
@@ -83,6 +87,8 @@ MENU = [
     ("4", "Retirer du panier", do_remove),
     ("5", "Voir le panier", show_cart),
     ("6", "Valider la commande", checkout),
+
+    ("8", "Alertes de stock", do_alerts),
 ]
 
 
