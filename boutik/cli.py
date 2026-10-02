@@ -2,7 +2,7 @@
 
 from boutik import __version__
 from boutik import cart as panier
-from boutik import catalog, invoice, pricing, stock
+from boutik import catalog, invoice, loyalty, pricing, stock
 
 
 def show_products(products, cart):
@@ -82,6 +82,8 @@ def checkout(products, cart):
     # [F4] sauvegarde de la facture
 
     # [F5] points de fidélité
+    print(f"Points de fidélité gagnés : {loyalty.points_for(total)}")
+
 
     for product_id, quantity in cart.items():
         stock.reserve(catalog.find_product(products, product_id), quantity)
