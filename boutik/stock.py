@@ -11,6 +11,6 @@ def reserve(product, quantity):
     if not is_available(product, quantity):
         raise ValueError(f"Stock insuffisant pour {product['name']}")
     product["stock"] -= quantity
-
+    
 
 # TODO (mission F7) : ajouter ici la fonction low_stock(products, threshold=3)
