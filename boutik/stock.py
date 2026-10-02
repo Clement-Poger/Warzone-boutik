@@ -13,4 +13,8 @@ def reserve(product, quantity):
     product["stock"] -= quantity
     
 
-# TODO (mission F7) : ajouter ici la fonction low_stock(products, threshold=3)
+def low_stock(products, threshold=3):
+#Renvoie les produits dont le stock est <= au seuil, du plus urgent au moinsurgent.
+    low = [p for p in products if p["stock"] <= threshold]
+    return sorted(low, key=lambda p: p["stock"])
+
