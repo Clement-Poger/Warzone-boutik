@@ -58,8 +58,18 @@ Lis [CONTRIBUTING.md](CONTRIBUTING.md) : une issue, une branche, une Pull Reques
 ## Équipe
 
 | Rôle | Nom | GitHub |
-| --- | --- | --- |
+| chef de proj | clément | --- |
+| collaborateur | julian | --- |
+| collaborateur | jeyson | --- |
+| collaborateur | tiago | --- |
+| collaborateur | nathan | --- |
 
+
+
+
+git clone <url-du-depot>
+cd <nom-du-depot>
+pip install -r requirements.txt     # installe pytest (facultatif)
 ## Licence
 
 [MIT](LICENSE)
