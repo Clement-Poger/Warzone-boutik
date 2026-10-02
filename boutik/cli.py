@@ -10,6 +10,10 @@ def show_products(products, cart):
     for p in products:
         prix = invoice.format_price(pricing.price_ttc(p["price_ht"]))
         print(f"  [{p['id']}] {p['name']} : {prix} (stock : {p['stock']})")
+def do_sort(products, cart):
+#Affiche le catalogue trié par prix."""
+    answer = input("Du moins cher au plus cher ? (o/n) : ").strip().lower()
+    show_products(catalog.sort_by_price(products, descending=(answer == "n")), cart)
 
 
 def do_search(products, cart):
@@ -64,9 +68,14 @@ def checkout(products, cart):
     text = invoice.build_invoice(cart, products)
     print(text)
 
-    # [F1] code promo
+    code = input("Code promo (Entrée si aucun) : ")
+    total = pricing.apply_promo(total, code)
 
-    # [F2] frais de livraison
+
+    shipping = pricing.shipping_cost(total)
+    print(f"Livraison : {invoice.format_price(shipping)}")
+    total = round(total + shipping, 2)
+
 
     print(f"À PAYER : {invoice.format_price(total)}")
 
@@ -87,8 +96,8 @@ MENU = [
     ("4", "Retirer du panier", do_remove),
     ("5", "Voir le panier", show_cart),
     ("6", "Valider la commande", checkout),
-
-    ("8", "Alertes de stock", do_alerts),
+    ("7", "Trier par prix", do_sort),
+    ("8", "Alertes de stock", do_alerts)
 ]
 
 
