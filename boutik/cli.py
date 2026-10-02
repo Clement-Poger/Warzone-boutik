@@ -62,7 +62,10 @@ def checkout(products, cart):
 
     # [F1] code promo
 
-    # [F2] frais de livraison
+    shipping = pricing.shipping_cost(total)
+    print(f"Livraison : {invoice.format_price(shipping)}")
+    total = round(total + shipping, 2)
+
 
     print(f"À PAYER : {invoice.format_price(total)}")
 
