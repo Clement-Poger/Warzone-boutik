@@ -51,26 +51,20 @@ Les tests se lancent aussi automatiquement sur GitHub à chaque push et à chaqu
 └── run_tests.py        # lance les tests sans pytest
 ```
 
-## Contribuer
-
-Lis [CONTRIBUTING.md](CONTRIBUTING.md) : une issue, une branche, une Pull Request relue.
-
 ## Équipe
 
 | Rôle | Nom | GitHub |
 |:--------:|:--------:|:--------:|
-| chef de proj | clément | --- |
-| collaborateur | julian | --- |
-| collaborateur | jeyson | --- |
-| collaborateur | tiago | --- |
-| collaborateur | nathan | --- |
+| Chef de Projet | Clément P. | [Visit](https://github.com/Clement-Poger) |
+| Collaborateur | Julian de F. | [Visit]() |
+| Collaborateur | Jeyson B. | [Visit](https://github.com/Littlegamer0) |
+| Collaborateur | Tiago C. | [Visit](https://github.com/TCR-JKBX) |
+| Collaborateur | Nathan B. | [Visit](https://github.com/Nathanb28310) |
 
+## Contribuer
 
+Lis [CONTRIBUTING.md](CONTRIBUTING.md) : une issue, une branche, une Pull Request relue.
 
-
-git clone <url-du-depot>
-cd <nom-du-depot>
-pip install -r requirements.txt     # installe pytest (facultatif)
 ## Licence
 
 [MIT](LICENSE)
