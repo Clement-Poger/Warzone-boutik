@@ -58,6 +58,7 @@ Lis [CONTRIBUTING.md](CONTRIBUTING.md) : une issue, une branche, une Pull Reques
 ## Équipe
 
 | Rôle | Nom | GitHub |
+|:--------:|:--------:|:--------:|
 | chef de proj | clément | --- |
 | collaborateur | julian | --- |
 | collaborateur | jeyson | --- |
