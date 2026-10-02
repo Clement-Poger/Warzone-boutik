@@ -41,4 +41,6 @@ def categories(products):
     """Renvoie la liste triée des catégories du catalogue."""
     return sorted({p["category"] for p in products})
 
-# TODO (mission F6) : ajouter ici la fonction sort_by_price(products, descending=False)
+def sort_by_price(products, descending=False):
+#Renvoie une NOUVELLE liste triée par prix (du moins cher au plus cher)."""
+    return sorted(products, key=lambda p: p["price_ht"], reverse=descending)
