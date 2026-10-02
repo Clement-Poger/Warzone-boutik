@@ -5,7 +5,7 @@ Format : [Keep a Changelog](https://keepachangelog.com/fr/1.1.0/), versions : [S
 
 ## [Unreleased]
 
-## [0.1.0]
+## [1.0.0]
 
 ### Added
 - Prototype de la boutique : catalogue, recherche, panier, facture et stock.
